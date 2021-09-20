@@ -13,19 +13,22 @@ const SliderStyled = styled(Swiper)`
   border-radius: 4px;
 
   .swiper-button {
-    height: 68px;
-    width: 30px;
+    height: 100%;
+    width: 85px;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
     background-color: ${rgba(colors.gray900, 0.3)};
     border-radius: 4px;
     transition: all 0.3s ease;
 
+    &:hover {
+      background-color: ${rgba(colors.gray900, 0.5)};
+    }
+
     &-next {
-      right: 10px;
+      right: 0;
 
       svg {
         transform: rotate(180deg);
@@ -33,7 +36,7 @@ const SliderStyled = styled(Swiper)`
     }
 
     &-prev {
-      left: 10px;
+      left: 0;
     }
   }
 `;
