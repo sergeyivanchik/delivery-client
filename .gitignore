@@ -1,0 +1,46 @@
+### macOS ###
+# general
+.DS_Store
+
+# Thumbnails
+._*
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### WebStorm ###
+.idea
+
+### Node ###
+# logs
+.DS_*
+*.log
+logs
+**/*.backup.*
+**/*.back.*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# npm
+node_modules
+
+# dotenv environment variables file
+.env
+.env.test
+.env*.local
+
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
+
+### Tests ###
+coverage
+
+### Build ###
+build
+dist

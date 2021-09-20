@@ -1,0 +1,9 @@
+.vscode
+.idea
+.git
+.husky
+node_modules
+build
+dist
+storybook-static
+coverage
