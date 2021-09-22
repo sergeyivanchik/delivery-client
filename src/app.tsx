@@ -1,4 +1,4 @@
-import React, { FC, Suspense } from 'react';
+import { Suspense } from 'react';
 
 import { Slider } from '@/modules';
 
@@ -6,7 +6,7 @@ import { Notification } from '@/components';
 
 import { GlobalStyle, AppLoading } from './global-style';
 
-export const App: FC = () => {
+export const App = () => {
   return (
     <>
       <GlobalStyle />
