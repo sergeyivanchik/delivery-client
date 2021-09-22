@@ -15,7 +15,7 @@ const Slider = () => {
 
   const { data, loading } = useRequest(getSlidersData);
 
-  const hasLoading = loading && <LoadingStyled color={colors.white} />;
+  const hasLoading = loading && <LoadingStyled color={colors.black} size={50} />;
   const hasSwiper = !loading && (
     <Swiper>
       {data?.map(({ id, ...rest }) => (
