@@ -1,7 +1,7 @@
 import { SwiperSlide } from 'swiper/react';
 import { useRequest } from 'ahooks';
 
-import { slides } from '@/api';
+import { slides as slidesApi } from '@/api';
 
 import { colors } from '@/assets/styles';
 
@@ -11,9 +11,7 @@ import { Slider as Swiper } from '@/components';
 import { Slide } from './slide';
 
 const Slider = () => {
-  const getSlidersData = async () => slides.getAll();
-
-  const { data, loading } = useRequest(getSlidersData);
+  const { data, loading } = useRequest(slidesApi.getAll);
 
   const hasLoading = loading && <LoadingStyled color={colors.black} size={50} />;
   const hasSwiper = !loading && (

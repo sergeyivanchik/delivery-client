@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 
-import { Slider } from '@/modules';
+import { Slider, Categories } from '@/modules';
 
 import { Notification } from '@/components';
 
@@ -13,6 +13,7 @@ export const App = () => {
       <Suspense fallback={<AppLoading />}>
         <Slider />
         <Notification />
+        <Categories />
       </Suspense>
     </>
   );
