@@ -1,5 +1,5 @@
 interface IButtonProps {
-  className: string;
+  className?: string;
 }
 
 export { IButtonProps };

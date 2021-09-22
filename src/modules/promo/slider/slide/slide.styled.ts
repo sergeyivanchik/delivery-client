@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import { ISlideStyled } from './slide.types';
+import { ISlideStyledProps } from './slide.types';
 
-const SlideLinkStyled = styled.a<ISlideStyled>`
+const SlideLinkStyled = styled.a<ISlideStyledProps>`
   display: block;
   background: url(${({ background }) => background}) center/cover no-repeat;
 

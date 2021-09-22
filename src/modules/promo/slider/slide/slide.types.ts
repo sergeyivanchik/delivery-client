@@ -1,5 +1,5 @@
-interface ISlideStyled {
+interface ISlideStyledProps {
   background: string;
 }
 
-export { ISlideStyled };
+export { ISlideStyledProps };
